@@ -1,0 +1,6 @@
+[submodule "vuorotiheys"]
+	path = vuorotiheys
+	url = https://github.com/traunio/vuorotiheys.git/
+[submodule "puoliintumisajat"]
+	path = puoliintumisajat
+	url = https://github.com/traunio/puoliintumisajat.git
