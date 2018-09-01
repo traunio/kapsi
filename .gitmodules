@@ -1,6 +1,8 @@
 [submodule "vuorotiheys"]
 	path = vuorotiheys
 	url = https://github.com/traunio/vuorotiheys.git/
+	branch = blueprint
 [submodule "puoliintumisajat"]
 	path = puoliintumisajat
 	url = https://github.com/traunio/puoliintumisajat.git
+	branch = blueprint

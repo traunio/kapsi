@@ -14,12 +14,11 @@ def homepage():
 
 @app.errorhandler(404)
 def page_not_found(error):
-    return "Sorry, sivua ei löytynyt", 404
+    return "Ei löytynyt sivua", 404
     
 
-
 @app.teardown_appcontext
-def close_connection(exception):
+def close_connection(exception=None):
     db = getattr(g, '_database', None)
     if db is not None:
         db.close()
