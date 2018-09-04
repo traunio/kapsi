@@ -1,8 +1,10 @@
-from flask import Flask, render_template, g
+from flask import Flask, render_template, g, redirect, url_for
 from puoliintumisajat.decay_webapp import decay_webapp
 from vuorotiheys.vuorotiheys import vuorotiheys
 
 app = Flask(__name__)
+
+app.url_map.strict_slashes = False
 
 app.register_blueprint(decay_webapp, url_prefix='/atomit')
 app.register_blueprint(vuorotiheys, url_prefix='/vuoro')
